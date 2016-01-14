@@ -1,0 +1,156 @@
+
+\documentclass[12pt]{article}
+
+
+%%% PACKAGES
+
+\usepackage{bibentry} %to use intext full bibliography entries instead of citations.  You will need a separate BibTex database for this to work.  See http://cst.usc.edu/services/tel/grants/legrants.html for details on this package.
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+%\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+%\usepackage{subfigure} % make it possible to include more than one captioned figure/table in a single float
+
+\usepackage{hyperref}
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions. Read ftp://ftp.tex.ac.uk/tex-archive/macros/latex/contrib/geometry/geometry.pdf for detailed page layout information 
+\geometry{margin=1in} % for example, change the margins to 1 inches all round
+%\geometry{landscape} % set up the page for landscape
+% 
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0.4pt} % customise the layout...
+%\lhead{}\chead{}\rhead{}
+%\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%\rfoot{\footnotesize SIR 330}
+\rhead{\footnotesize PHYS 9C Syllabus}
+\renewcommand\footrulewidth{0pt}
+
+
+%%% SECTION TITLE APPEARANCE
+%\usepackage{sectsty}
+%\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+
+%% END Article customise
+
+%%% BEGIN DOCUMENT
+
+
+\begin{document}
+
+
+\thispagestyle{plain} %alternatively specify empty to get no footer on first page.  This is part of the fancyhdr package
+
+
+\nobibliography{MasterBib} %this specifies the BibTex directory that stores your desired bibliography entries.  It has to come before any \bibentry lines are invoked
+
+\bibliographystyle{apalike} %be careful here, there is only a few styles that will run
+
+
+%\tableofcontents
+
+\begin{center}
+\bigskip
+\large{\bf{Classical Physics}}
+
+\textbf{Part 1: motion of particles}
+
+\textsc{Winter 2016} \bigskip
+
+\end{center}
+
+\noindent\textbf{Instructor: }Brent Follin, btfollin@ucdavis.edu\medskip
+
+%\noindent\textbf{Graders: }Armela Keqi, Mengyao Shi\medskip
+
+
+\noindent\textbf{Time and Location:} MT, 4:30-6:30, Forest Room\medskip
+
+\noindent\textbf{Office Hour:} M 3:00-4:30pm,\ TBD\medskip
+
+\noindent\textbf{Course Websites:}
+\begin{tabular}{l l}
+Piazza: & \url{piazza.com/uc_davis/winter2016/phys_1} 
+\end{tabular}
+\bigskip
+
+
+
+\section*{Overview and Objectives}
+This is a course on (classical) motion, forces, and energy. We'll tackle projectile motion, Newton's laws, rotation, and energy. That's the physical content, but I also hope to enforce the following good scientific habits in the process of exposing you to physics:
+\begin{itemize}
+\item Simplifying complicated real-life systems to relatively simple theoretical models.
+\item Quickly (and somewhat accurately) making educated guesses about the behavior of the model.
+\item Using mathematical tools associated with the model to make detailed predictions about the system in question.
+\item Understanding the limitations of the model in correctly predicting the real-life system.
+\item Checking the validity of the model whenever possible.
+\end{itemize}
+
+\section*{My Purpose}
+We meet together twice a week for 2 hours; in this time I hope to both give you the tools to work with the theoretical constructs of electricity and magnetism--Maxwell's equations and the laws of circuitry--as well as expose you to the scientific habits I listed above. The best way to do that is through example: the vast majority of time we have together will be spent working through example calculations and demonstrations of the behavior of physical systems. This means I will be counting on your reading to expose you to the full breadth of the topics covered.  In other words, the lecture style you may be used to--a teacher systematically defining terms and their relations--is NOT what we'll have here.  That information you can find in the book, and regurgitating it for you is a waste of our limited time together.
+
+\section*{Your Purpose}
+Obviously, your goal is to learn physics, and, I hope, to better appreciate the general power of physical thinking to make relatively quick and accurate predictions about real-life systems. 
+\medskip
+
+\noindent To that end, you should come to our time together consistently and adequately prepared for learning. That means the obvious: bring a working mind, something to take notes on, and an engaged attitude. {\bf It also means keeping up with the assigned reading}--you will get much more out of the examples and labs we work through if you've been exposed to the related material in the assigned chapters. We'll also have a laboratory component--drawing connections between the systems we study there and the theory we do here is a primary goal of this course. 
+
+\section*{Course Outline}
+
+\noindent{\bf Textbook:} University Physics, Volume 1 (From University Physics, Thirteenth Edition, by Young \& Freedman)
+\medskip
+\begin{itemize}
+\item{Vectors, Ch. 1 (1 week)}
+\item{Distance, Displacement, Velocity, and Acceleration, Ch. 2  (1 week)}
+\item{Projectiles, Circular motion, Ch. 3 (1 week)}
+\item{Newton's Laws, Ch. 4-5 (2 weeks)}
+\item{Energy Conservation and Work, Ch 6-7 (2 weeks)}
+\item{Elastic and Inelastic collisions, Ch. 8 \& 26 (1 week)}
+\item{Torque and rotations, Ch. 9-10 (2 weeks)}
+
+\end{itemize}
+
+\section*{Assessment}
+\begin{description}
+\setlength{\itemsep}{2pt}
+\setlength{\parskip}{2pt}
+\item[{Weekly Homework (25\%):}] Homework is where you practice the skill of physics. {\bf Each question should be turned in on a seperate sheet of paper} (God forgives the killing of trees for the pursuit of physics). Most assigned questions will be from the book, but calculations should ALWAYS be formatted as follows, which is also how we'll do our in class examples (so you'll have plenty of exposure to what I mean):
+	\begin{description}
+	\item[{\rm Part A (10\%):}] Units (dimensions) of the requested answer(s)
+	\item[{\rm Part B (30\%):}] An estimate of the order of magnitude you expect for the answer(s), with ({\bf one sentence!}) justification.
+	\item[{\rm Part C (60\%):}] The requested calculation, with answers boxed, and top-to-bottom flow of logic. If you don't explain a step, your grader will assume you don't understand it, so be thorough.
+	\end{description}
+\medskip
+
+\noindent Because it is primarily practice, the calculations will be graded mostly on completion. One or two calculations per assignment will be graded in detail giving you feedback on your work, while parts A \& B above will be graded for each problem. Solutions will be posted after the homework is due. Because solutions will be available, {\bf no late work will be accepted}; however, two homework grades will be dropped at the end of the course. Working with others is encouraged, but make sure the work you turn in is your own.
+\item[{Reading Quizzes (10\%):}] Assigned reading is critical to getting the full benefit of this course. To encourage you to do the reading, there will be online quizzes (on the smartsite) due whenever reading is assigned. There's no excuse to not get a 100\% on these, just don't forget about them! 
+\item[Quizzes (35\%):] There will be 4 quizzes, scattered throughout the course (exact dates TBD). All will be comprehensive on material covered up to that point in the course.
+\item[{Final Exam (30\%):}] The final exam will be comprehensive.
+\item[{Labs:}] Lab work will be assessed through the completion of lab reports, papers describing in detail the process and results of the labs we do in class. More details of this will follow the completion of our first lab.
+\end{description}
+
+\section*{Students With Disabilities}
+Please contact me by the second week of the course so we can arrange any accommodations.
+
+\section*{Student Code of Conduct}
+Integrity is my most valued character trait. All alleged violations will be reported to the Office of Student Judicial Affairs. For information on the University Code of Conduct see: \url{http://sja.ucdavis.edu/cac.html}
+
+\section*{Principles of Community}
+Please help me make this classroom a safe learning environment where all can stretch and make mistakes without fear. I support the university's Principles of Community \\
+\url(http://occr.ucdavis.edu/poc/).
+
+\section*{Course Policies:}
+\begin{enumerate}
+\item Homework is either due in class on the day assigned, or before in my mailbox in the physics department mailroom.
+\item No late homework will be accepted.  Solutions will be posted when homework is due, so anything turned in late will receive a zero.  
+\item No food in class.
+\item Cell phones are on silent and in your pocket. No cell phones as calculators--a scientific calculator (TI-30 or equivalent) is sufficient for this course.
+\end{enumerate}
+
+
+\end{document} 
