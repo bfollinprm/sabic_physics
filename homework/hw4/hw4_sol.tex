@@ -1,0 +1,73 @@
+%Jennifer Pan, August 2011
+
+\documentclass[10pt,letter]{article}
+	% basic article document class
+	% use percent signs to make comments to yourself -- they will not show up.
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{amssymb}
+	% packages that allow mathematical formatting
+
+\usepackage{graphicx}
+	% package that allows you to include graphics
+
+\usepackage{setspace}
+	% package that allows you to change spacing
+
+\onehalfspacing
+	% text become 1.5 spaced
+
+\usepackage{fullpage}
+	% package that specifies normal margins
+	
+
+\begin{document}
+	% line of code telling latex that your document is beginning
+
+
+\title{Homework 4}
+
+\author{SABIC: Physics}
+
+\date{Due February 29, 2016}
+	% Note: when you omit this command, the current dateis automatically included
+ 
+\maketitle 
+	% tells latex to follow your header (e.g., title, author) commands.
+
+\section*{Reading:}
+Read Chapters 6 and 7.
+\section*{Problem 1: practice with estimation}
+\begin{enumerate}[(a)]
+\item {\bf The gravitational potential of the sun on the Earth is given by $GM_{sun}M_{Earth}/x$, where $G =6.67 \times 10^{-11} {\rm N m}^2/{\rm kg}^2$ is Newton's gravitational constant and $x = 1.49 \times 10^11 m$ is the distance from the Earth to the Sun. (i) Estimate the gravitatational force the Earth exerts on the sun. (ii) Estimate the speed at which the Earth rotates about the sun, and find the period of rotation.}
+The force is the (negative) derivative of the potential with respect to $x$, which gives 
+\begin{equation*}
+F = \frac{G M_e M_{\rm sun}}{x^2}
+\end{equation*}
+Plugging in the numbers given (and looking up the masses) gives around $1 \times 10^{22}$N. The speed is given by the equation $F = ma = mv^2/r$, which if you take $r = x = 1\times 10^{11}$m, and the mass of the Earth you used above, gives you a speed of $3 \times 10^4$m/s. Now, the period is $T = d/v$, where the distance $d = 2\pi x \simeq 10x = 1\times 10^{12}$m, which gives you $T = 3 \times 10^7$s. That's approximately a year.
+\item {\bf A bullet from a $.50$ caliber rifle (bullet weight of $50$ grams) can be used to hit a target over $2$ km away. Estimate the potential energy in the gunpowder. (Hint: find the velocity of the bullet as it leaves the gun, and use conservation of energy.)}
+Start by finding the time of flight. Taking the $y$ component of positions, we have $y(t) = vsin(\theta) t - 5t^2 $, so $t_{f} = v \sin \theta / 5$. From the $x$ component of the position, we have $x(t) = v \cos \theta t $, which means $2000 {\rm m} = v \cos \theta t_f$. Plugging in $t$ from the $y$ equation gives 
+\begin{equation*}
+\frac{2000}{v\cos\theta} = {v \sin \theta}{5} 
+\end{equation*}
+Solving for $v$ gives $v = 2 \times 10^3$m/s, which corresponds to $t \simeq 1$s. The change in kinetic energy is $KE = 1/2 (0.05 {\rm kg}) (2 \times 10^3 {\rm m/s})^2  \simeq 1 \times 10^5$J, which must be equal to the change in potential energy in the gunpowder.
+\end{enumerate}
+\section*{Problem 2: Kinetic Energy and Work }
+\begin{enumerate}[(a)]
+\item {\bf Book problem $6.21$}
+(i) $mgh = 1/2 m v^2$, so $v = \sqrt{2gh} = 43.6$m/s.
+(ii) $v = \sqrt{2gh} = \sqrt{10500} = 102.5$m/s.
+\item {\bf Book problem $6.25$}
+$W = F \cdot \delta x = 1/2 m v_f^2 - 1/2 m v_i^2 = 16 ( 36 - 8 ) = 448 J$. Since $\delta x = 2.5$m, $F = 179.2$N in the direction of travel.
+\end{enumerate}
+\section*{Problem 3: Conservation of Energy}
+\begin{enumerate}[(a)]
+\item {\bf Book problem $7.37$. Hint: the friction force does some work $W = F_{\rm friction} \cdot \Delta x$, so $\Delta E = W$.}
+The friction force is given by $F = \mu_s N$ for a static object, which in this case means $1300 \times .7 = 910$N. That's enough to keep the object in place. When you remove the gravel, that's no longer true, and the friction force drops to $F = \mu_k N = 320$N (where we switch to $k$ because the object is moving). The change in $U_{\rm grav} = (65kg)(10m/s^2)(2m) = 1300$J, while the work done is $F \cdot x = (320N)(2m) = 640$J. So $\delta KE = 1/2 m_{box} v_f^2 + 1/2 m_{bucket} v_f^2 = 660J$. This gives $v_f^2 = 8.41 m^2/s^2$, or $v = 2.9$m/s.
+\item {\bf Book problem $7.42$. Hint: the total acceleration at the top of the loop is due to gravity, pointing downwards (at the minimum speed the normal force, which also points downwards, is zero). What must this acceleration be equal to for the motion to be in a circle? Reviewing the equations for circular motion may help.}
+(A) For the cart to stay on the track, the centrepital acceleration must be at least equal to the acceleration due to gravity pulling it off the track at the top. Taking $a = 10m/s^2$, we have $a = v^2/r \rightarrow v = \sqrt{10r}$. The kinetic energy is then $KE = 1/2 m v^2 = 5mr$. That energy came from a decrease in potential energy of $\Delta U = 5 mr^2 = mgh - 2mgr$. Cancelling the $m$ and plugging in $g = 10m/s^2$, we get $10h = 20 r + 5 r = 25 r$, or $h = 2.5 r$. 
+(B) Plugging in the values, we're clearly going to get $a = 10m/s^2$ pointing upwards, since that's the ratio we calculated we need for the centrepital acceleration to equal gravity.
+\end{enumerate}
+
+\end{document}
+	% line of code telling latex that your document is ending. If you leave this out, you'll get an error

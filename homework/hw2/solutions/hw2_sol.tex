@@ -1,0 +1,93 @@
+%Jennifer Pan, August 2011
+
+\documentclass[10pt,letter]{article}
+	% basic article document class
+	% use percent signs to make comments to yourself -- they will not show up.
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{amssymb}
+	% packages that allow mathematical formatting
+
+\usepackage{graphicx}
+	% package that allows you to include graphics
+
+\usepackage{setspace}
+	% package that allows you to change spacing
+
+\onehalfspacing
+	% text become 1.5 spaced
+
+\usepackage{fullpage}
+	% package that specifies normal margins
+	
+
+\begin{document}
+	% line of code telling latex that your document is beginning
+
+
+\title{Homework 2}
+
+\author{SABIC: Physics}
+
+\date{Due January 28, 2016}
+	% Note: when you omit this command, the current dateis automatically included
+ 
+\maketitle 
+	% tells latex to follow your header (e.g., title, author) commands.
+
+\section*{Reading (Due April 1, 2015):}
+Read Chapter 2.
+\section*{Problem 1: practice with estimation}
+\begin{enumerate}[(a)]
+\item {\bf How many times the acceleration due to gravity does a drag racer experience when accelerating?}
+A drag racer goes $1/4$ of a mile, which is about $1$km. To do that in the typical $5$second times, you have to travel at an average velocity of $1$km/$5$seconds, or $200{\rm m}/{\rm s}$. Assuming constant acceleration, that means the final velocity is around $v_f = 400 {\rm m}/{\rm s}$, and that gives a typical acceleration of $a = v_f/t = 100 {\rm m}/{\rm s}^2 = 10$g. 
+\end{enumerate}
+\section*{Problem 2: conceptual}
+\begin{enumerate}[(a)]
+\item {\rm Can an object with constant acceleration change tis direction of motion? Is there a maximum number of times this can happen?}
+Yes, for example a cart initially going uphill will change direction and go downhill under the influence of gravity, a source of constant acceleration. For it to change direction again, though, the acceleration would have to change direction, and therefore would not be constant.
+\item {\rm Can you have a zero displacement and a nonzero average velocity? A nonzero velocity? Illustrate your answers on an $x\-t$ graph.}
+No, you can't, and yes, you can, respectively. The average velocity is zero, because $\Delta x = 0$. But the same is not true for the instantaneous velocities. For instance, if you throw a ball directly up in the air, the instantaneous velocity is only zero at the highest point of the trajectory, but the ball comes back exactly where it started.
+\item {\bf Argue for the following statements: (i) Neglecting air resistance, anything thrown vertically upward with some speed $v$ will return to the point at which it is thrown with that same speed; and (ii) again neglecting air resistance, the amount of time it takes to return will be twice the time it takes to get to its highest point.}
+\item {\bf An object is thrown straight up into the air and feels no air resistance. Give the acceleration and velocity at its highest point.}
+$a = 9.8 {\rm m}/{\rm s}^2$, $v = 0$.
+\item {\bf Dropping a ball from some height $d$ without air resistance causes it to hit the ground in time $T$. How long does it take (in terms of $T$) for an object to fall that's dropped at a height $3d$?}
+$x$ goes as $t^2$, so $3x$ goes as $3t^2 = (\sqrt{3}t)^2$. So the answer is $\sqrt{3}T$.
+\end{enumerate}
+\section*{Problem 3: Velocity}
+\begin{enumerate}[(a)]
+\item {\bf A car is stopped at a traffic light. IT then travels along a straight road so that its distance from the light is given by $x(t) = bt^2 - ct^3$, where $b = 2.40 {\rm m}/{\rm s}^2$ and $c = 1.20 {\rm m}/{\rm s}^3$. (i) Calculate the average velocity of the car between $t = 0$s and $t = 10.0$s.}
+At $t=0$, $x(0) = 0$. At $t = 10$s, $x(10) = 240 -1200 = -960$m. That means the average velocity is $v_{\rm ave} = -960/10 = -96$m/s (That doesn't make sense, because there was a typo, whoops.)
+ {\bf (ii) Calculate the instantaneous velocity of the care at $t = 0$s, $t = 5.0$s, and $t = 10.0$s.} 
+ The instantaneous velocity is the derivative, which is $v(t) = 2bt -3ct^2$. Plugging in, we get $v(0) = 0$, $v(5) = -66$m/s, and $v(10) = -312$m/s.
+ {\bf (iii) How long does it take for the car to return to being at rest?}
+ We want the time where $v(t) = 0$, which happens at $t = 0$, but also at $t = \frac{2b}{3c} = 4/3$s
+\item {\bf A lunar lander is descending toward the moon's surface. Until the lander reaches the surface, its height above the surface of the moon is given by $y(t) = b - ct + dt^2$, with $b = 800 m$ the initial height of the lander, $c = 60.0 $m/s, and $d = 1.05 {\rm m}{\rm s}^2$.  (i) What is the initial velocity of the lander?}
+The initial velocity is $c = 60$m/s downward.
+{\bf  What is the velocity of the lander just before it reaches the lunar surface?}
+We need to find when $y(t) = 0$. That occurs at $t = \frac{c \pm \sqrt{c^2 - 4bd}}{2d}$, or $t = 21.2$s and $t = 35.9$s. By the latter time, the lander has already crashed, so we throw that out. The velocity is then $v(21.2s) = -c + 2 d t \simeq15.5$m/s downwards (towards the surface). Ouch.
+
+\end{enumerate}
+\section*{Problem 4: Acceleration}
+\begin{enumerate}[(a)]
+\item {\bf A world-class sprinter accelerates to his maximum speed in $4.0$s. He then maintains this speed for the remainder of a $100$m race, finishing with a total time of $9.1$s. (i) What is the runner's average acceleration during hte first $4.0$s?}
+We know for the last $5.1$s of the race, the runner travels a distance $x = 5.1 v_f$, where $v_f$ is the final velocity of the runner after $4.0$s of acceleration. The average acceleration is then $a_{\rm ave} = \frac{v_f - v_i}{4.0s}$, which gives us $a_{\rm ave} = a = \frac{v_f}{4.0s}$. The distance traveled in the first $4$s is then $x = \frac{1}{2} a t^2 = 2v_f$. Adding up the total distance, we have $3.1 v_f + 2 v_f = 10$m, which gives $v_f \simeq 14$m/s, and $a_{ave} = 3.5 {\rm m}/{\rm s}^2$ {\bf (ii) What is his average acceleration during hte last $5.1$s?} Zero. {\bf (iii) What is his average acceleration for the entire race?} $a_{ave} = \frac{v_f}{9.1} = 1.5 {\rm m}{s^2}$. {\bf (iv) Explain why the answer to part (iii) isn't the average of parts (i) and (ii).} It's because the runner spends more time not accelerating than accelerating, so the not accelerating bit gets weighed more.
+\item {\bf A $7500$kg rocket blasts off vertically from the launch pad with a constant upward acceleration of $2.25 {\rm m}/{s^2}$ and feels no air resistance. When it has reached a height of $525$m, its engines suddenly fail so that the only force acting on it is now gravity. (i) What is the maximum height this rocket will reach above the launch pad?}
+First, find the velocity when the engine cuts. We can use $v^2 = v_0^2 + 2as$, since $s = 525$m and acceleration is given (and $v_0 = 0$). We get that $v = 48.6$m/s. the additional height reached is again given by $v^2 = v_0^2 + 2as$, where now $s$ is unknown, $a = 10{\rm m/s}^2$ due to gravity, $v_0 = 48.6$m/s, and $v_f = 0$. We get a distance of $s = 121$m, which gives a total height of $646$m
+ {\bf (ii) How much time after engine failure will elapse before the rocket crashlands on the launch pad, and how fast will it be moving just before it crashes?}
+ We know that it will pass $525$m on the way back down with a velocity of $v_0 = 58.6$m/s, by one of our answers above. Again using the kinematic equation $v^2 = v_0^2 + 2as$, we have $v_f = 112$m/s down into the ground. Ouch. The time is given by $v_f = 48.6 + at$, with $a = -10 {\rm m/s}^2$, which means that $t = 16.4$s. Eject! 
+\end{enumerate}
+\section*{Problem 5: Motion under constant acceleration}
+\begin{enumerate}[(a)]
+\item {\rm You throw a glob of putty straight up toward the ceiling, which is $3.60$m above the point where the putty leaves your hand. The initial speed of the putty is $9.50$m/s. (i) What is the speed of the putty just before it strikes the ceiling?}
+Again use $v^2 = v_0^2 + 2as$. Solving for $v$ gives $4.44$m/s.  
+{\bf (ii) How much time when it leaves your hand does it take the putty to reach the ceiling?}
+As the last problem, using $v = v_0 + at$ gives $t = 0.52$s.
+\item {\rm A jet fighter wishes to accelerate at $5g$ (g=$9.8 {\rm m}/{\rm s}^2$) to escape a dogfight as quickly as possible. Experimental evidence shows that this acceleration will black out the pilot if it lasts for longer than $5.0$s. (i) What is the greatest speed the pilot can reach before blacking out?}
+$v = 50 * 5 = 250$m/s. {\bf (ii) How far will the pilot travel?} $x = 1/2 a t^2 = 5^4 = 625$m.
+\item {\rm A basketball player jumping towards the basket seems to 'hang' in the air. Even the best athletes spend at most $1.00$s in the air. Let $y_{\rm max}$ be the maximum height of the athlete off the ground. To see why they appear to hang in the air, calculate the ratio of the time he is above $y_{\max}/2$ to the total time the athlete is off the ground. Ignore air resistance. Explain your answer.}
+If the total time in the air is $1$s, then the player reaches his maximum height in $0.5$s, and falls back down the next $0.5$s. Consider the way down, when the initial velocity is zero. Since he's under constant acceleration, this means he travels a distance of $h = 5 (.5)^2 = 1.25$m. We'll look for the time where that height is above $1.25/2 = 0.625$m. That height occurs at $0.625 = 5 t^2$, or $t = .35$s. That means it take only $.15$s to travel the rest of the way down, so the player spends $.70$s total at heights above half his maximum height, and only $.3$s total at heights below this height.
+\end{enumerate}
+
+\end{document}
+	% line of code telling latex that your document is ending. If you leave this out, you'll get an error
