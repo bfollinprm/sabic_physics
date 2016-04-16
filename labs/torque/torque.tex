@@ -1,0 +1,107 @@
+\documentclass[12pt]{article}
+
+\setlength{\topmargin}{-.75in} \addtolength{\textheight}{2.00in}
+\setlength{\oddsidemargin}{.00in} \addtolength{\textwidth}{.75in}
+
+\usepackage{amsmath,color,graphicx}
+\usepackage{float}
+
+\nofiles
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0in}
+
+
+\begin{document}
+
+\noindent {\sc {\bf {\Large Lab 1: Torque and Center of Mass}}}
+\bigskip
+
+\noindent {\sc  {}
+            \hfill {\large Name:}
+             \hfill}
+\bigskip
+
+\section{Experiment 1: Finding the center of mass}
+In this lab we'll try and measure the center of mass of a compound object. The center of mass is given by
+\begin{equation}
+\label{eq: center of mass}
+R_{\rm c.m.} = \frac{\sum_{i} m_i r_i}{\sum_i m_i},
+\end{equation}
+where the sum is over the elements of the object. A force on the center of mass does not cause a rotation; in other words, since the distance $r$ from the center of mass to the location of the force is zero ($r = 0$), the torque is zero ($\tau = 0$).
+\subsection{Setup}
+You will find at the desks a ruler and a set of pennies (\$$0.01$USD) we will use as weights. Using a set number of pennies, construct a compound object by placing your stack of pennies at one edge of the ruler, and fasten them with tape.
+\subsection{Procedure}
+Weigh your ruler using the scale.
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Mass of Ruler & \,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\\
+\hline
+\end{tabular}
+\end{table}
+
+The external forces on your object are the force of gravity, acting down, and the normal force of the table, acting up. Move the ruler slowly over the edge of the table (side without pennies facing away from the center of the table). What happens when the center of mass of the object (ruler + penny stack) moves past the edge of the table? Untape your pennies, and weigh them using the scale.
+{\bf Repeat the experiment $5$ times, using different numbers of pennies each time.}
+\subsection{Results}
+Carefully record, with as much precision as possible, (i) the mass of the pennies given by the scale, (ii) the length of ruler over the edge of the table when the ruler starts to fall, and (iii) the number of pennies used in your stack of pennies. Do this for each of the 5 trials below.
+For each trial, calculate the mass of each penny in your stack using the center of mass equation and the known mass of the ruler. Combine trials with the students in your group and find the experimental mass of a penny, including error. 
+\begin{table}[H]
+\centering
+ \begin{tabular}{|c|| c |c |c |} 
+ \hline
+ Trial & Mass of Stack (g) & Distance over edge (cm) & Number of Pennies \\ [0.5ex] 
+ \hline\hline
+ 1 & \, & \, & \, \\ 
+ \hline
+ 2 & \, & \, & \, \\
+ \hline
+ 3 & \, & \, & \, \\
+ \hline
+ 4 & \, & \, & \, \\
+ \hline
+ 5 & \, & \, & \, \\ [1ex] 
+ \hline
+ \end{tabular}
+\end{table}
+
+
+\section{Experiment 2: Torque balance}
+Torque is the rotational analogue of force, and is given by 
+\begin{equation}
+\label{eq: torque}
+\vec{\tau} = \vec{r} \times \vec{F}
+\end{equation}
+
+\subsection{Setup}
+You will find at the desk a ruler, pennies, and a triangular fulcrum. Weigh the ruler on the scale (it should be the same ruler as for the first experiment).
+Take a stack of pennies and another twice as large. Weight them, and affix them to opposite edges of the ruler. Place the ruler lengthwise on the fulcrum.
+
+\subsection{Procedure}
+Attempt to balance the ruler on the fulcrum by moving the ruler lengthwise with respect to the fulcrum. What is the net torque $\tau$ when the fulcrum balances?
+
+\subsection{Results}
+Record the location of the fulcrum on the ruler which best balances the ruler. Record the number of pennies used in the smaller stack. Using the measured mass of the pennies and ruler, calculate the torque from (i) the heavy stack of pennies on side 1 of the ruler; (ii) the light stack of pennies on side 2 of the ruler; (iii) the center of mass of side 1 of the ruler (the side containing the heavier stack of pennies); and (iv) the center of mass of side 2 of the ruler (the side containing the lighter stack of pennies). Calculate the total torque on the ruler when the ruler is as close as possible to balanced. As before, combine trials with the students in your group, and find the average net torque $\tau_{\rm total}$, including error.
+
+\begin{table}[H]
+\centering
+ \begin{tabular}{|c|| c |c |c |c | c |} 
+ \hline
+ \# Pennies & $\tau$ stack 1  & $\tau$ stack 2 & $\tau$ from $M_{\rm ruler}$ (1) & $\tau$ from $M_{\rm ruler}$ (2) & $\tau_{\rm total}$ (exp.)\\ [0.5ex] 
+ \hline\hline
+ \, & \, & \, & \, & \, & \,\\ 
+ \hline
+ \, & \, & \, & \, &\, & \, \\
+ \hline
+ \, & \, & \, & \, &\,& \, \\
+ \hline
+ \, & \, & \, & \, &\, & \,\\
+ \hline
+ \, & \, & \, & \, &\, & \,\\ [1ex] 
+ \hline
+ \end{tabular}
+\end{table}
+
+\end{document}
