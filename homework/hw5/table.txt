@@ -1,0 +1,10 @@
+ Ali & 2.508 \\
+ Ben & 2.619 \\
+ Carlina & 2.590 \\
+ Dan & 2.425 \\
+ Emily & 2.426 \\
+ Francis & 2.367 \\
+ Gia & 2.463 \\
+ Hassan & 2.426 \\
+ Injit &  2.627 \\
+ Julia & 2.388 \\
